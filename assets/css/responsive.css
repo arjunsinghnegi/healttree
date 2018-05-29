@@ -1,0 +1,234 @@
+ @media(min-width:768px) {
+     /*sidebar*/
+     #wrapper {
+         padding-left: 270px;
+     }
+     #wrapper.toggled {
+         padding-left: 70px;
+     }
+     #sidebar-wrapper {
+         width: 270px;
+     }
+     #wrapper.toggled #sidebar-wrapper {
+         width: 70px;
+     }
+     #page-content-wrapper {
+         position: relative;
+     }
+     #wrapper.toggled #page-content-wrapper {
+         position: relative;
+         margin-right: 0;
+     }
+     /*sidebar*/
+ }
+
+ @media(max-width:1302px) {
+     /*fish test buttons*/
+     .static-col {
+         width: 29%;
+     }
+ }
+
+ @media(max-width:1199px) {
+     /*fish test buttons*/
+     .static-col {
+         width: 33%;
+     }
+     .upload_btn button.btn {
+         height: 55px;
+         font-size: 13px;
+     }
+ }
+
+ @media(max-width:991px) {
+     /*fish test buttons*/
+     .static-col {
+         float: left;
+         margin-bottom: 15px;
+         width: 50%;
+     }
+      /*sidebar*/
+     #sidebar-wrapper {
+         width: 70px;
+     }
+     #wrapper {
+         padding-left: 70px;
+     }
+     .sidebar-nav li a {
+         padding-left: 50px;
+     }
+     .toggled .sidebar-nav li a {
+         padding-left: 43px;
+     }
+     .profile {
+         display: none;
+     }
+     .toggled .profile {
+         display: block;
+     }
+     /*sidebar*/
+ }
+
+ @media(max-width:767px) {
+     /*After Login*/
+     .modal-bg {
+         padding-left: 0px;
+         padding-right: 0px;
+     }
+    
+     /*header*/
+     .flaticon-close {
+         display: none;
+     }
+     .close-nav .flaticon-menu {
+         display: none;
+     }
+     .close-nav .flaticon-close, .close-nav .flaticon-close::before {
+         display: block;
+         font-size: 22px;
+         text-align: center;
+         width: 30px;
+     }
+     .toggle-sm {
+         line-height: 35px;
+     }
+     /*header*/
+     /*fish test buttons*/
+     .static-col {
+         float: none;
+         margin-bottom: 0px;
+         padding-right: 0;
+         width: 33%;
+     }
+     .upload_btn button.btn {
+         font-size: 12px;
+         height: 55px;
+     }
+ }
+
+ @media(max-width:650px) {
+     /*fish test buttons*/
+     .static-col {
+         float: left;
+         margin-bottom: 15px;
+         padding: 0px 15px;
+         width: 50%;
+     }
+     .upload_btn button.btn {
+         font-size: 13px;
+     }
+ }
+
+ @media(max-width:575px) {
+     /*sidebar*/
+     .lock {
+         overflow: hidden;
+     }
+     #sidebar-wrapper {
+         margin-top: 0px;
+         position: fixed;
+     }
+     #wrapper {
+         padding-left: 0;
+         z-index: inherit;
+     }
+     #sidebar-wrapper {
+         width: 0;
+         height: 100%;
+     }
+     #page-content-wrapper {
+         width: 100%;
+         padding: 15px 0px;
+     }
+     #wrapper.toggled #sidebar-wrapper {
+         overflow-y: scroll;
+         top: 0px;
+     }
+     .toggled+footer+#overlay {
+         position: fixed;
+         z-index: 999;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         display: block;
+         background-color: rgba(0, 0, 0, 0.50);
+     }
+     .toggle-sm {
+         line-height: 26px;
+     }
+     /*breadcum*/
+     .breadcrumb {
+         margin: 15px 0px;
+     }
+     /*header*/
+     header button.blue_btn {
+         border: 0 none;
+         font-size: 20px;
+         line-height: 20px;
+         margin: 0px 0 0;
+         min-width: auto;
+         padding: 3px 2px 3px 6px;
+     }
+     header button.blue_btn i {
+         padding: 0;
+     }
+     header button.blue_btn span {
+         display: none;
+     }
+     /*header*/
+     /*page content*/
+     .rmb-10 {
+         margin-bottom: 10px !important;
+     }
+     .btn-rt {
+         float: none;
+     }
+     .profile {
+         display: block;
+     }
+     .pr-10 {
+         padding-right: 15px;
+     }
+     .pl-10 {
+         padding-left: 15px;
+     }
+     .form-group {
+         margin-bottom: 1rem;
+     }
+ }
+
+ @media(max-width:480px) {
+     /*After Login page*/
+     .modal-bg h5 {
+         font-size: 24px;
+     }
+     .modal-bg .modal-header h5 span {
+         line-height: 26px;
+         padding-top: 43px;
+     }
+     .modal-bg .modal-header img {
+         float: right;
+         width: 45%;
+     }
+     /*header*/
+     .toggle-sm {
+         margin-left: 15px;
+     }
+     /*page content*/
+     .toggle-switch label {
+         min-width: 80px;
+     }
+     /*page content*/
+     /*fish test buttons*/
+     .static-col {
+         float: none;
+         margin-bottom: 15px;
+         padding: 0px 15px;
+         width: 100%;
+     }
+     .upload_btn button.btn {
+         font-size: 14px;
+         height: 50px;
+     }
+ }

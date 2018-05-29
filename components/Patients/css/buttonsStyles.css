@@ -1,0 +1,29 @@
+/** Button Style **/
+
+. button {
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+. button buttonWarning {
+    background-color: #f1c40f;
+}
+
+. button buttonError {
+    background-color: #e74c3c;
+}
+
+. button buttonInfo {
+    background-color: #00a2d3;
+}
+
+. button buttonSuccess {
+    background-color: #27ae60;
+}
+
+. button buttonDefault {
+    background-color: #4c4c4c;
+}

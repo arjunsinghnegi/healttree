@@ -1,0 +1,426 @@
+/*signin page*/
+
+button, input, optgroup, select, textarea {
+    font-family: 'Asap', sans-serif;
+}
+
+.signin-bg {
+    background-image: url('../images/signin-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-position: center top; display: table;
+}
+.signin-bg::before {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0088c0+0,0088c0+35,000000+100 */
+background: rgb(0,136,192); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(0,136,192,1) 0%, rgba(0,85,122,1) 45%, rgba(0,0,0,2) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,136,192,1) 0%,rgba(0,85,122,1) 45%,rgba(0,0,0,2) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,136,192,1) 0%,rgba(0,85,122,1) 45%,rgba(0,0,0,2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088c0', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+opacity: 0.7;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.center_tb {
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell; width: 100%; z-index: 11;
+}
+
+.center-div {
+    float: none;
+    margin: 0px auto;
+}
+
+.signin-bg h1 {
+    margin-bottom: 70px;
+}
+
+.what-healthtree {
+    padding-right: 37px;
+}
+
+.what-healthtree::before {
+    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+    content: "";
+    height: 80%;
+    position: absolute;
+    right: 0;
+    width: 1px;
+}
+
+.login_box {
+    margin-left: 35px;
+    text-align: left;
+}
+
+.what-healthtree h2 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.what-healthtree p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 20px;
+}
+
+.what-healthtree .more a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: underline;
+    padding-top: 10px;
+    display: block;
+}
+
+.what-healthtree .more i {
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.what-healthtree .more a:hover, .what-healthtree .more a:hover i {
+    text-decoration: none;
+}
+
+.login_box h3 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-bottom: 30px;
+}
+
+.login_box input[type="text"], .login_box input[type="email"], .login_box input[type="password"] {
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    height: 42px;
+    padding-right: 34px;
+}
+
+.login_box ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
+    font-size: 14px;
+}
+
+.login_box ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    font-size: 14px;
+}
+
+.login_box :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+    font-size: 14px;
+}
+
+.login_box :-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+    font-size: 14px;
+}
+
+.signin-link {
+    border-top: 0px;
+}
+
+.login_box .form-group {
+    position: relative;
+}
+
+.login_box .icon i {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+
+.login_box .form-group i.fa-lock {
+    font-size: 16px;
+}
+
+.remeber {
+    float: left;
+}
+
+.forgot {
+    float: right;
+    text-align: right;
+}
+
+.remeber, .forgot a {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.form-group.pass_wrd {
+    margin-bottom: 15px;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+.login_box .yellow_btn {
+    float: left;
+    min-width: 135px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+
+.social {
+    float: right;
+    text-align: left;
+    margin-top: 6px;
+}
+
+.social label {
+    float: left;
+    font-size: 13px;
+    line-height: 13px;
+    padding-top: 10px;
+}
+
+.login_box ul {
+    text-align: center;
+    float: left;
+}
+
+.login_box ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.login_box ul li a {
+    display: inline-block;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    line-height: 34px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.fb {
+    background-color: #3b5999;
+}
+
+.gplus {
+    background-color: #d24332;
+}
+
+.login_box ul li a:hover.fb {
+    background-color: #fff;
+    color: #3b5999;
+}
+
+.login_box ul li a:hover.gplus {
+    background-color: #fff;
+    color: #d24332;
+}
+
+.form-group.social_link {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.notamember {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.create a {
+    font-weight: 500;
+    padding-left: 10px;
+    color: #ffb668;
+    text-decoration: underline;
+}
+
+.create a:hover {
+    text-decoration: none;
+}
+
+.login_footer {
+    bottom: 0;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.login_box ul li a span {
+    display: none;
+}
+
+.login_box .form-group small {
+    line-height: 12px;
+    margin: 4px 0 0;
+    position: absolute;
+}
+
+
+/*common css*/
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.yellow_btn {
+    background-color: #f69834;
+    border-color: #f69834;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.yellow_btn:hover, .yellow_btn:focus {
+    background-color: #d3730c;
+    border-color: #d3730c;
+    color: #fff;
+    box-shadow: none;
+}
+
+.login_box .checkbox-custom {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.login_box .checkbox-custom, .login_box .checkbox-custom-label{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.login_box .checkbox-custom-label{
+    position: relative; padding-left: 20px;
+}
+
+.login_box .checkbox-custom+.checkbox-custom-label:before{
+    content: '';
+    background: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+    padding: 0px;
+    margin-right: 10px;
+    text-align: center; top:4px;
+}
+
+.login_box .checkbox-custom:checked+.checkbox-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    color: #fff;
+    font-size: 8px; line-height: 9px; background: none; border-color: #fff;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+.login_box input:-webkit-autofill, .login_box textarea:-webkit-autofill, .login_box select:-webkit-autofill {
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+
+/***Login Media***/
+
+@media (min-width:1200px) {
+.center-div{width:890px;}
+
+	}
+
+@media (max-width:767px) {
+    .signin-bg .col-sm {
+        flex-basis: auto;
+        float: none;
+        width: 100%;
+    }
+    .signin-bg h1 {
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    .what-healthtree {
+        padding: 0px 15px;
+    }
+    .login_box {
+        margin-left: 0px;
+    }
+    .login_footer {
+        position: static;
+        font-size: 13px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    .what-healthtree::before {
+        display: none;
+    }
+    .login_box {
+        height: auto;
+    }
+    .signin-bg {
+        background-position: center 100%;
+    }
+}
+
+@media (max-width:480px) {
+    .login_box .yellow_btn {
+        width: 100%;
+    }
+    .social {
+        width: 100%;
+        margin: 0px;
+    }
+    .social label {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        margin: 15px 0px;
+    }
+    .form-group.social_link {
+        margin: 20px 0px;
+    }
+    .login_box ul {
+        width: 100%;
+    }
+    .login_box ul li {
+        margin: 0px 10px;
+    }
+}
+.email_tooltip {
+    opacity: 1 !important;
+    background-color: #32aa3a !important;
+}
+.email_tooltip::after{
+    /* border-left-color: #32aa3a !important; */
+    border-top-color: #32aa3a !important;
+}

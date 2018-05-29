@@ -1,0 +1,273 @@
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    /*position: relative;*/
+    height: 100%;
+    z-index: 1;
+}
+
+footer {
+    height: 38px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 270px;
+    width: 0;
+    height: calc(100% - 38px - 84px);
+    margin-left: -270px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: #fafafa;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    top: 84px;
+    margin-top: 0px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 270px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 30px 15px;
+    height: 100%;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: -0.3px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    margin-right: -270px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    top: 0;
+    width: 270px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    margin-bottom: 2px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #a3a3a3;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    padding: 12px 0 12px 43px;
+    border-left: 3px solid transparent;
+    border-left: 4px solid #99ccf6;
+}
+
+.sidebar-nav li a i {
+    float: left;
+    font-size: 16px;
+    margin-left: 0px;
+}
+
+.sidebar-nav [class^="flaticon-"]::before, .sidebar-nav [class*=" flaticon-"]::before, .sidebar-nav [class^="flaticon-"]::after, .sidebar-nav [class*=" flaticon-"]::after {
+    left: 4px;
+    margin-left: 0;
+    position: absolute;
+}
+
+
+/*.sidebar-nav li a span { padding-left: 20px; }*/
+
+.sidebar-nav li a:hover, .sidebar-nav li.active a {
+    text-decoration: none;
+    color: #2f87ec;
+    border-color: #2f87ec;
+}
+
+.sidebar-nav li.fill a {
+    text-decoration: none;
+    color: #81C424;
+    border-left: 3px solid #81C424;
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+.sidebar-nav li a i.fnt29:before, .sidebar-nav li a i.fnt29:after {
+    float: left;
+    font-size: 29px;
+    width: 20px;
+}
+
+
+/*.sidebar-nav li a span.pl10 {
+  padding-left: 11px;
+}*/
+
+.profile {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.user-pic {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    height: 76px;
+    margin: 0 auto;
+    padding: 3px;
+    text-align: center;
+    width: 76px;
+}
+
+.profile>span, .profile>p {
+    color: #3e4043;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 17px;
+}
+
+.profile>p {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.profile .progress-bar {
+    height: 4px;
+}
+
+.profile .progress {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    background-color: #dddddd;
+}
+
+.static-bar>label {
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+}
+
+.static-bar span {
+    float: right;
+    color: #F0AD4E;
+    font-weight: 500;
+}
+
+.toggle-sm {
+    border: 0 none;
+    box-shadow: none;
+    color: #3a9ff3;
+    float: right;
+    line-height: 26px;
+    margin: 0px 0 0 20px;
+    text-shadow: none;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-sm [class^="flaticon-"]::before, .toggle-sm [class*=" flaticon-"]::before, .toggle-sm [class^="flaticon-"]::after, .toggle-sm [class*=" flaticon-"]::after {
+    font-size: 30px;
+}
+
+.toggle-sm a:hover {
+    color: #81C424;
+}
+
+.scrollbar-container {
+    position: relative;
+    margin: 0px auto;
+    padding: 0px;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+/**
+ * scrollbarNN - Manish
+ */
+
+
+/* stylesheet for demo and examples */
+
+.content {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: calc(100% - 191px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.content.hidden {
+    display: none;
+}
+
+.content.light {
+    color: #333;
+}
+
+@media only screen and (min-width: 1229px) {
+    .showcase .horizontal-images.content {
+        width: 1060px;
+    }
+}
+
+@media only screen and (min-width: 1629px) {
+    .showcase .horizontal-images.content {
+        width: 700px;
+    }
+}
+
+#root {
+    height: 100%;
+}
+
+.main-cover {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 38px;
+}
+
+.main-cover .main_footer {
+    position: absolute;
+    bottom: 0;
+}
